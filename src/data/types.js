@@ -1,0 +1,4 @@
+const ITEM_TYPE  = "ITEM";
+const SECTION_TYPE  = "SECTION";
+
+export {ITEM_TYPE, SECTION_TYPE};
