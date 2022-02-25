@@ -20,7 +20,7 @@ const Homepage = () => {
         setItems(prevState => {
             const updatedItems = prevState
                 .filter(i => i.id !== item.id)
-                .concat({ ...item, status, icon: mapping.icon });
+                .concat({ ...item, status});
 
             let newItems = [];
             for (let i = 0; i < statuses.length; i++) {
@@ -76,9 +76,7 @@ const Homepage = () => {
             //後でmapで置換する
             let newItem = {
                 id: items.length + 1,
-                icon: mapping.icon,
                 status: status,
-                title: "new item",
                 content: "new item"
             }
             const updatedItems = prevState
